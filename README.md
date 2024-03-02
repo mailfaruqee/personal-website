@@ -23,10 +23,6 @@ An evaluation of the strategic ecosystem restoration potential. [More about this
 
 Provide information that will help users assess land suitability for crop production and prioritise areas for irrigation. [More about this project](https://www.itb.ac.id/berita/tim-mahasiswa-itb-raih-medali-emas-asean-geospatial-challenge-2023/59326).
 
-### Project 4: Meow (Mangrove Ecosystem Optimization Workgroup)
-
-Development of an integrated information system for assessing mangrove ecosystems in Indonesia. [More about this project](https://www.spaceappschallenge.org/2023/find-a-team/meow/?tab=project).
-
 ## Blog
 
 I occasionally write about my work, new technologies, and personal experiences in the geospatial tech industry. Here are a few of my latest posts:
