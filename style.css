@@ -568,8 +568,7 @@ main {
      * #PORTFOLIO, BLOG 
      */
   
-    /* .project-img,
-    .blog-banner-box { height: auto; } */
+    .project-img { height: auto; }
   
   }
 
