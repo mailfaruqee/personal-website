@@ -3,23 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="decription" content="'Personal website of Ismai Al Faruqi">
-    <title>Personal Website of Ismail Al Faruqi</title>
-
-    <!--
-    - favicon
-    -->
-     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-
-    <!--
-    - custom css link
-    -->
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/custom.css">
-
-    <!--
-    - google font link
-    -->
+    <title>Ismail Portofolio</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -27,616 +14,160 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-        <div class="sidebar-info">
-            <figure class="avatar-box">
-                <img class="scale" src="/images/mailfaruqi-photo.jpg" alt="Ismail's Photo">
-              </figure>
-
-              <div class="info-content">
-                <h1 class="name" title="Ismail Al Faruqi">Ismail Al Faruqi</h1>
-      
-                <p class="title">A Fresh Graduate Geospatial Engineer</p>
-              </div>
-      
-              <button class="info_more-btn" data-sidebar-btn>
-                <span>Show Contacts</span>
-      
-                <ion-icon name="chevron-down"></ion-icon>
-              </button>
-      
-            </div>
-
-            <div class="sidebar-info_more">
-
-                <div class="separator"></div>
-        
-                <ul class="contacts-list">
-        
-                  <li class="contact-item">
-        
-                    <div class="icon-box">
-                      <ion-icon name="mail-outline"></ion-icon>
-                    </div>
-        
-                    <div class="contact-info">
-                      <p class="contact-title">Email</p>
-        
-                      <a href="mailto::mailfaruqi@icloud.com" class="contact-link">mailfaruqi@icloud.com</a>
-                    </div>
-        
-                  </li>
-
-                  <li class="contact-item">
-
-                    <div class="icon-box">
-                      <ion-icon name="location-outline"></ion-icon>
-                    </div>
-        
-                    <div class="contact-info">
-                      <p class="contact-title">Currently</p>
-        
-                      <time datetime="2023-08-01">South Jakarta, Indonesia</time>
-                    </div>
-        
-                  </li>
-        
-                  <li class="contact-item">
-        
-                    <div class="icon-box">
-                      <ion-icon name="home-outline"></ion-icon>
-                    </div>
-        
-                    <div class="contact-info">
-                      <p class="contact-title">Originally</p>
-        
-                      <address>Yogyakarta, Indonesia</address>
-                    </div>
-        
-                  </li>
-        
-                </ul>
-
-                <div class="separator"></div>
-            
-            
-            </div>
-
-    </aside> 
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-        <!--
-          - #NAVBAR
-        -->
-  
-        <nav class="navbar">
-  
-          <ul class="navbar-list">
-  
-            <li class="navbar-item">
-              <button class="navbar-link  active" data-nav-link>About</button>
-            </li>
-            
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Skills</button>
-            </li>
-  
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-  
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-  
-          </ul>
-  
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Data Analytics</a></li>
+                <li><a href="#writing">Writing</a></li>
+            </ul>
         </nav>
+        <div class="header-text">
+            <h1><span>Ismail Al Faruqi</span>Earth Observation<br> & <br>Spatial Data Science</h1>
+        </div>
+    </div>
+</div>
 
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-            <p>Hey, thanks for stopping by!</p>
-            <p>As a fresh graduate from Institut Teknologi Bandung, 
-            I am leveraging my expertise in Remote Sensing and Geospatial Information Systems to deliver strategic solutions for projects.
-            I’m a spatial analyst who’s passionate about making our world better and 
-            driving sustainable and equitable development across diverse sectors.
-            </p>
-            <p>With the use of powerful tools such as mapping and data visualization, 
-                I support people in realizing what's happening around them 
-                and how we can come together for the betterment of our communities.
-            </p>
-            <p>I have a deep passion for enhancing community well-being and partnering with grassroots organizations to advance social and environmental equity. 
-                I'm certain that together, with the aid of technology and data for direction, we have the power 
-                to create urban environments that are more inclusive, eco-conscious, and just awesomely better. 
-                Here you can see a little bit more about what I’m interested in and what I’m up to.
-                So, let's dive in!
-            </p>
-
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Areas of Interest</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/images/icon-aboutme/geo.png
-                " alt="geospatial icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Geospatial Data Solutions</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/images/icon-aboutme/sustain.png" alt="Sustain icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Sustainability and Environmental Protection</h4>
-
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/images/icon-aboutme/book.png" alt="book icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Scientific Communication</h4>
-
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/images/icon-aboutme/planning.png" alt="planning icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Infrastructure Planning</h4>
-
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-            <h4 class="h4 clients-title">Affiliations</h4>
-  
-            <ul class="clients-list has-scrollbar">
-  
-              <li class="clients-item">
-                <a href="#">
-                  <img src="/images/logo/itb.png" alt="itb logo">
-                </a>
-              </li>
-  
-              <li class="clients-item">
-                <a href="#">
-                  <img src="/images/logo/crs.png" alt="crs itb logo">
-                </a>
-              </li>
-  
-              <li class="clients-item">
-                <a href="#">
-                  <img src="/images/logo/pupr-logo.png" alt="pupr logo">
-                </a>
-              </li>
-  
-  
-            </ul>
-  
-          </section>
-  
-        </article>
-
-
-
-      <!--  
-        - #SKILLS
-      -->
-
-
-      <article class="skills" data-page="skills">
-
-        <header>
-          <h2 class="h2 article-title">Skills</h2>
-
-          <section class="skills">
-
-            <h3 class="h3 skills-title">Programming Languages</h3>
-  
-            <ul class="skills-list">
-  
-              <li class="skills-item">
-  
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/python.png"
-                   alt="python icon" width="40">
-                </div>
-  
-                <div class="skills-content-box">
-                  <h4 class="h4 skills-item-title">Python</h4>
-                </div>
-  
-              </li>
-  
-              <li class="skills-item">
-  
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/js.png" alt="Java icon" width="40">
-                </div>
-  
-                <div class="skills-content-box">
-                  <h4 class="h4 skills-item-title">JavaScript</h4>
-                </div>
-  
-              </li>
-
-  
-              </li>
-  
-            </ul>
-
-            <h3 class="h3 skills-title">Software and Applications</h3>
-
-            <ul class ="skills-list">
-                <li class = "skills-item">
-                    <div class="skills-icon-box">
-                      <img src="/images/icon-skills/gee.png" alt="gee icon" width="40">
-                    </div>
-      
-                <div class="skills-content-box">
-                    <h4 class="h4 skills-item-title">Google Earth Engine</h4>
-                </div>
-
-
-              <li class = "skills-item">
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/qgis.png" alt="qgis icon" width="40">
-                </div>
-  
-                <div class="skills-content-box">
-                    <h4 class="h4 skills-item-title">QGIS</h4>
-                </div>
-
-
-              <li class="skills-item">
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/arcgispro.png" alt="arcgispro icon" width="40">
-                </div>
-
-                <div class = "skills-content-box">
-                    <h4 class = "h4 skills-item-title">ArcGIS Pro</h4>
-                </div>
-              </li>
-
-
-              <li class="skills-item">
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/spss.png" alt="SPSS icon" width="60">
-                </div>
-
-                <div class = "skills-content-box">
-                    <h4 class = "h4 skills-item-title">SPSS</h4>
-                </div>
-              </li>
-
-            </ul>
-
-
-            <h3 class="h3 skills-title">Spoken Languages</h3>
-            <ul class="skills-list">
-              <li class="skills-item">
-
-                <div class="skills-icon-box">
-                  <img src="/images/icon-skills/ina.png" alt="ina icon" width="40">
-                </div>
-  
-                <div class="skills-content-box">
-                  <h4 class="h4 skills-item-title">Indonesia</h4>
-                  <p class="skills-item-text">
-                    Native
-                  </p>
-                </div>
-              </li>
-              <li class="skills-item">
-
-              <div class="skills-icon-box">
-                <img src="/images/icon-skills/eng.png" alt="eng icon" width="40">
-              </div>
-
-              <div class="skills-content-box">
-                <h4 class="h4 skills-item-title">English</h4>
-                <p class="skills-item-text">
-                  IELTS 7.0
-                </p>
-              </div>
-            </li>
-            
-            <li class="skills-item">
+<!-------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/images/mailfaruqi-photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">about me</h1>
+                    <p> As a fresh graduate from Institut Teknologi Bandung, I am leveraging my expertise in 
+                    Remote Sensing and Geospatial Information Systems to deliver strategic solutions and 
+                    making our world  driving sustainable and equitable development across diverse sectors.</p>
+                   
+                    <p>I'm currently working as a GIS consultant at the Ministry of Public Works and Housing,
+                    especially at The Geo-Infrastructure Studio under The National Infrastructure Regional Development Centre.</p>
+                    
+                    <p> I'm certain that together, with the aid of technology and data for direction,
+                    we have the power to create urban environments that are more inclusive, eco-conscious, 
+                    and just awesomely better. So, let's dive in!</p>
                 
-                <div class="skills-icon-box">
-                <img src="/images/icon-skills/jp.png" alt="jpn icon" width="40">
-              </div>
-              
-              <div class="skills-content-box">
-                <h4 class="h4 skills-item-title">Japanese</h4>
-                <p class="skills-item-text">
-                  JLPT N4
-                </p>
-              </div>
-            </li>
+                <ul class="social-links">
+                    <a href="assets/resume-jtr.pdf" class="resume-button" download="resume-jtr.pdf">resume</a>
+                    <a href="https://github.com/jtrummler" class="resume-button">github</a>
+                    <a href="https://linkedin.com/in/jackrummler" class="resume-button">linkedin</a>
+                    <a href="mailto:jtrummler0503@gmail.com" class="resume-button">e-mail</a>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-            </ul>
-  
-          </section>
-        </header>
-
-      </article>
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="competition" data-project-item>
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S2352938523001490?via%3Dihub">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="/images/portofolio/timsurili-pimnas.jpg" alt="pimnas" width="1800" height="1200" data-project-img>
-                </figure>
-              </a>
-
-                <h3 class="project-title" data-project-title>Habitat Suitability Index of Surili</h3>
-
-                <p class="project-category">Research, Competition, College</p>
-
-                <div class = "project-text" data-project-text>
-
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">data analytics</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ep.png">
+                <div class="layer">
+                    <h3>FORECASTING BUS TRANSIT ALTERNATIVES IN EL PASO</h3><br>
+                    <p>Building a latent bus transit demand model and informational evaluative app to allow Sun Metro transit planners to build more equitable and profit maximizing routes.</p><br>
+                    <p>Skills used: R, Random Forest, XG Boost, Google Cloud Services</p><br>
+                    <p>Project Team: Charlie Huemmler, Yingxue Ou, and Jack Rummler</p><br>
+                    <p><a href="assets/FinalPres_Practicum_ElPaso_0502.pdf">Final Presentation</a></p><br>
+                    <p><a href="assets/el-paso-final.html">R Markdown</a></p><br>
+                    <p><a href="https://chuembucket.github.io/ElPaso-Bus-Network1/App/site/">Web App</a></p>
                 </div>
-
-              
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="competition" data-project-item>
-              <a href="https://www.itb.ac.id/berita/tim-mahasiswa-itb-raih-medali-emas-asean-geospatial-challenge-2023/59326">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="/images/portofolio/agc2023.jpg" alt="agc" width="1800" height="1200" data-project-img>
-                </figure>
-              </a>
-
-                <h3 class="project-title" data-project-title>Cropland Suitability and Irrigation Priority Development</h3>
-
-                <p class="project-category">Research, Competition, College</p>
-
-                <div class = "project-text" data-project-text>
+            </div>
+            <div class="work">
+                <img src="images/hurricane.png">
+                <div class="layer">
+                    <h3>DETECING HURRICANE DAMAGE USING REMOTE SENSING AND MACHINE LEARNING</h3><br>
+                    <p>Using deep learning models to classify hurricane damage from post-Hurricane Harvey satellite imagery.</p><br>
+                    <p>Skills used: Python, convolutional neural networks, VGG-16, residual neural networks</p><br>
+                    <p>Project Team: Ben Keel, Jack Rummler, and Kate Tanabe</p><br>
+                    <p><a href="assets/RemoteSensingFinal_KeelRummlerTanabe.pdf">Presentation</a></p><br>
+                    <p><a href="assets/RS_Report_KeelRummlerTanabe.pdf">Report</a></p><br>
+                    <p><a href="https://nbviewer.org/github/jtrummler/MUSA650_Final/blob/main/MUSA650_final_keel_rummler_tanabe.ipynb">Jupyter Notebook</a></p>
                 </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-       
-      </article>
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <div class="work">
+                <img src="images/msa.png">
+                <div class="layer">
+                    <h3>URBAN GROWTH MODELING IN THE NASHVILLE MSA</h3><br>
+                    <p>Forecasting demand and supply side urban development using binary logistic regression.</p><br>
+                    <p>Skills used: R, binary logistic regression, policy communication</p><br>
+                    <p>Project Team: Jack Rummler and Shengqian Wang</p><br>
+                    <p><a href="assets/RUMMLER_WANG_MEMO.html">R Markdown</a></p><br>
+                    <p><a href="assets/RUMMLER_WANG_POSTER.pdf">Policy Poster</a></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/eurosat1.png">
+                <div class="layer">
+                    <h3>CLASSIFYING EUROSAT LAND COVER DATA</h3><br>
+                    <p>Developing several convolutional neural network models to predict 10 different land cover classifications, with an accuracy of nearly 80%.</p><br>
+                    <p>Skills used: Keras, Tensorflow, convolutional neural networks</p><br>
+                    <p><a href="https://nbviewer.org/github/jtrummler/eurosat-hw4/blob/main/MUSA650_HW4_JackRummler.ipynb">Jupyter Notebook</a></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/nj.png">
+                <div class="layer">
+                    <h3>PREDICTING NEW JERSEY TRANSIT TRAIN DELAYS</h3><br>
+                    <p>Accurately predicted train delays on the Northeast Corridor two hours in advance with an average error of only 26 seconds.</p><br>
+                    <p>Skills used: R, OLS regression, binary logistic regression</p><br>
+                    <p>Project Team: Rebekah Adams and Jack Rummler</p><br>
+                    <p><a href="assets/njtransit-adams-rummler.html">R Markdown</a></p><br>
+                    <p><a href="https://www.youtube.com/watch?v=vrF7Rini-4M">YouTube Video</a></p>
+                </div>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Institut Teknologi Bandung</h4>
-
-              <span>2019-2023</span>
-
-              <p class="timeline-text">
-                Geodesy and Geomatics Engineering (BSc)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="work">
+                <img src="images/phl-home.png">
+                <div class="layer">
+                    <h3>HOME PRICE MODELING IN PHILADELPHIA, PA</h3>
+                    <p>Using a Random Forest Regression to predict home prices with 75% accuracy.</p><br>
+                    <p>Skills used: Python, Random forest regression</p><br>
+                    <p><a href="https://nbviewer.org/github/jtrummler/philly-home-price-modeling/blob/main/assignment-7-jtrummler.ipynb">Jupyter Notebook</a></p>
+                </div>
             </div>
+        </div>
+    </div>
+</div>
 
-            <h3 class="h3">Professional Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">GIS Consultant</h4> 
-                <h5 class="h5 timeline-item-subtitle"><i>Badan Pengembangan Infrastruktur Wilayah Kementerian PUPR</i></h5>
-                <span>2023 — Present</span>
-
-              <p class="timeline-text">
-                - Developed a geospatial-based decision support system to prioritize infrastructure projects
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-  
-              <h3 class="h3">Awards</h3>
+<!-- ----------writing------------ -->
+<div id="writing">
+    <div class="container">
+        <h1 class="sub-title">writing</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/gnv.png">
+                <div class="layer">
+                    <h3>EVALUATION OF EAST GAINESVILLE'S MICROTRANSIT</h3><br>
+                    <p>A study of Gainesville, Florida's microtransit pilot and a recommendation guideline for the effectiveness and stability of micromobility services.</p><br>
+                    <p>Skills used: Literature and practice review, technical memorandums, transit planning</p><br>
+                    <p>Project Team: Dr. Ruth Steiner, Dr. Siva Srinivasan, Dr. Mehri Mohebbi, Dr. Xiang Yan, Sagar Patni, Larissa Krinos, Juan Suarez, Jack Rummler</p><br>
+                    <p><a href="https://fdotwww.blob.core.windows.net/sitefinity/docs/default-source/transit/documents/evaluation-of-east-gainesville-mico-mobility.pdf?sfvrsn=37915487_2">Final Report</a></p>
+                </div>
             </div>
-  
-            <ol class="timeline-list">
-  
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">Undergraduate Grand Prize Winner of iGEM</h4> 
-                  <h5 class="h5 timeline-item-subtitle"><i>iGEM Indonesian League</i></h5>
-                  <span>December 2023, Indonesia</span>
-  
-              </li>
-
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">A BUMN Scholarship Recipient of ITB Outstanding Student</h4> 
-                  <h5 class="h5 timeline-item-subtitle"><i>Badan Usaha Milik Negara</i></h5>
-                  <span>September 2023, Indonesia</span>
-  
-              </li>
-
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">Distinction Award of ASEAN Geospatial Challenge</h4> 
-                  <h5 class="h5 timeline-item-subtitle"><i>Singapore Land Authority</i></h5>
-                  <span>March 2023, Singapore</span>
-  
-              </li>
-
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">Second Place Datathon Georestart Jawa Barat</h4> 
-                  <h5 class="h5 timeline-item-subtitle"><i>Dinas Komunikasi dan Informatika Jawa Barat</i></h5>
-                  <span>October 2022, Indonesia</span>
-  
-              </li>
-
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">First Place Figure Skate Competition</h4> 
-                  <h5 class="h5 timeline-item-subtitle"><i>Ice Skating Institute Asia</i></h5>
-                  <span>August 2022, Malaysia</span>
-  
-              </li>
-  
-            </ol>
-  
-          </section>
-
-      </article>
-
-
-
-
-
-
-    </main>
-    
-    <footer>
-        <p>Mailfaruqi © 2024</p>
-    </footer>
+            <div class="work">
+                <img src="images/duval.png">
+                <div class="layer">
+                    <h3>RESILIENCY FOR A BETTER DUVAL: SENIOR CAPSTONE</h3><br>
+                    <p>A scoping literature review and case study analysis of best practices in urban resilience planning to inform recommendations for Jacksonville, Florida. Mentored by Dr. Azza Kamal.</p><br>
+                    <p>Skills used: Social sciences and qualitative research, social-ecological resilience practice</p><br>
+                    <p><a href="https://ufdc.ufl.edu/AA00088536/00001">Final Report</a></p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/gwr.png">
+                <div class="layer">
+                    <h3>REGRESSION METHODS TO ASSESS PHILADELPHIA'S BLOCK GROUP INCOME</h3><br>
+                    <p>Using spatial statistics and different regression methods to investigate relationship between census block level median household income and neighborhood characteristics.</p><br>
+                    <p>Skills used: R, ArcGIS Pro, GeoDa, spatial lag, spatial error, geographic weighted regression</p><br>
+                    <p>Project Team: Haobing Liu, Jack Rummler, and Kate Tanabe</p><br>
+                    <p><a href="assets/hw2-liu-rummler-tanabe.pdf">Final Report</a></p>
+                </div>
+            </div>
 </body>
 </html>
