@@ -3,52 +3,642 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website of Ismail Al Faruqi</title>
     <meta name="decription" content="'Personal website of Ismai Al Faruqi">
+    <title>Personal Website of Ismail Al Faruqi</title>
+
+    <!--
+    - favicon
+    -->
+     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+    -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/custom.css">
+
+    <!--
+    - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-    <h1>Ismail Al Faruqi</h1>
-    <img src="/images/mailfaruqi-photo.jpg" alt="Ismail Photo">
 
-    <p>A Fresh Graduate Geospatial Engineer</p>
-    <ul>
-        <li>Birthday: 2001</li>
-        <li>Currently: South Jakarta, Indonesia</li>
-        <li>Origin: Yogyakarta, Indonesia</li>
-    </ul>
-    <p>Contact</p>
-    <ul>
-        <li><a href="mailto:mailfaruqi@icloud.com">email</a></li>
-        <li><a href="https://www.linkedin.com/in/mailfaruqi">linkedin</a></li>
-        <li><a href="https://github.com/mailfaruqee">github</a></li>
-    </ul>
-    
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about-me/index.html">About Me</a></li>
-            <li><a href="/skills/index.html">Skills</a></li>
-            <li><a href="/portofolio/index.html">Portofolio</a></li>
-            <li><a href="/resume/index.html">Resume</a></li>
-            <li><a href="/blog/index.html">Blog</a></li>
-        </ul>
-    </nav>
-    </header>
+  <!--
+    - #MAIN
+  -->
 
-    <main>
-        <div>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+            <figure class="avatar-box">
+                <img class="scale" src="/images/mailfaruqi-photo.jpg" alt="Ismail's Photo">
+              </figure>
+
+              <div class="info-content">
+                <h1 class="name" title="Ismail Al Faruqi">Ismail Al Faruqi</h1>
+      
+                <p class="title">A Fresh Graduate Geospatial Engineer</p>
+              </div>
+      
+              <button class="info_more-btn" data-sidebar-btn>
+                <span>Show Contacts</span>
+      
+                <ion-icon name="chevron-down"></ion-icon>
+              </button>
+      
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+        
+                <ul class="contacts-list">
+        
+                  <li class="contact-item">
+        
+                    <div class="icon-box">
+                      <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+        
+                    <div class="contact-info">
+                      <p class="contact-title">Email</p>
+        
+                      <a href="mailto::mailfaruqi@icloud.com" class="contact-link">mailfaruqi@icloud.com</a>
+                    </div>
+        
+                  </li>
+
+                  <li class="contact-item">
+
+                    <div class="icon-box">
+                      <ion-icon name="location-outline"></ion-icon>
+                    </div>
+        
+                    <div class="contact-info">
+                      <p class="contact-title">Currently</p>
+        
+                      <time datetime="2023-08-01">South Jakarta, Indonesia</time>
+                    </div>
+        
+                  </li>
+        
+                  <li class="contact-item">
+        
+                    <div class="icon-box">
+                      <ion-icon name="home-outline"></ion-icon>
+                    </div>
+        
+                    <div class="contact-info">
+                      <p class="contact-title">Originally</p>
+        
+                      <address>Yogyakarta, Indonesia</address>
+                    </div>
+        
+                  </li>
+        
+                </ul>
+
+                <div class="separator"></div>
+            
+            
+            </div>
+
+    </aside> 
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+  
+        <nav class="navbar">
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Skills</button>
+            </li>
+  
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+  
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+  
+          </ul>
+  
+        </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
             <p>Hey, thanks for stopping by!</p>
-            <p>I’m a spatial analyst who’s passionate about making our world better and 
-            driving sustainable and equitable development across diverse sectors.</p>
+            <p>As a fresh graduate from Institut Teknologi Bandung, 
+            I am leveraging my expertise in Remote Sensing and Geospatial Information Systems to deliver strategic solutions for projects.
+            I’m a spatial analyst who’s passionate about making our world better and 
+            driving sustainable and equitable development across diverse sectors.
+            </p>
             <p>With the use of powerful tools such as mapping and data visualization, 
                 I support people in realizing what's happening around them 
-                and how we can come together for the betterment of our communities.</p>
+                and how we can come together for the betterment of our communities.
+            </p>
             <p>I have a deep passion for enhancing community well-being and partnering with grassroots organizations to advance social and environmental equity. 
                 I'm certain that together, with the aid of technology and data for direction, we have the power 
-                to create urban environments that are more inclusive, eco-conscious, and just awesomely better. So, let's dive in!</p>
-        </div>
+                to create urban environments that are more inclusive, eco-conscious, and just awesomely better. 
+                Here you can see a little bit more about what I’m interested in and what I’m up to.
+                So, let's dive in!
+            </p>
+
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Areas of Interest</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="/images/icon-aboutme/geo.png
+                " alt="geospatial icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Geospatial Data Solutions</h4>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="/images/icon-aboutme/sustain.png" alt="Sustain icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sustainability and Environmental Protection</h4>
+
+                <p class="service-item-text">
+                  
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="/images/icon-aboutme/book.png" alt="book icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Scientific Communication</h4>
+
+                <p class="service-item-text">
+                  
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="/images/icon-aboutme/planning.png" alt="planning icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Infrastructure Planning</h4>
+
+                <p class="service-item-text">
+                  
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+            <h4 class="h4 clients-title">Affiliations</h4>
+  
+            <ul class="clients-list has-scrollbar">
+  
+              <li class="clients-item">
+                <a href="#">
+                  <img src="/images/logo/itb-logo.png" alt="itb logo">
+                </a>
+              </li>
+  
+              <li class="clients-item">
+                <a href="#">
+                  <img src="/images/logo/crs-logo.png" alt="crs itb logo">
+                </a>
+              </li>
+  
+              <li class="clients-item">
+                <a href="#">
+                  <img src="/images/logo/gisact-photo.png" alt="gisact logo">
+                </a>
+              </li>
+  
+              <li class="clients-item">
+                <a href="#">
+                  <img src="/images/logo/pupr-logo.png" alt="pupr logo">
+                </a>
+              </li>
+  
+  
+            </ul>
+  
+          </section>
+  
+        </article>
+
+
+
+      <!--  
+        - #SKILLS
+      -->
+
+
+      <article class="skills" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+
+          <section class="skills">
+
+            <h3 class="h3 skills-title">Programming Languages</h3>
+  
+            <ul class="skills-list">
+  
+              <li class="skills-item">
+  
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/python.png"
+                   alt="python icon" width="40">
+                </div>
+  
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Python</h4>
+                </div>
+  
+              </li>
+  
+              <li class="skills-item">
+  
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/js.png" alt="Java icon" width="40">
+                </div>
+  
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">JavaScript</h4>
+                </div>
+  
+              </li>
+
+  
+              </li>
+  
+            </ul>
+
+            <h3 class="h3 skills-title">Software and Applications</h3>
+
+            <ul class ="skills-list">
+                <li class = "skills-item">
+                    <div class="skills-icon-box">
+                      <img src="/images/icon-skills/gee.png" alt="gee icon" width="40">
+                    </div>
+      
+                <div class="skills-content-box">
+                    <h4 class="h4 skills-item-title">Google Earth Engine</h4>
+                </div>
+
+
+              <li class = "skills-item">
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/qgis.png" alt="qgis icon" width="40">
+                </div>
+  
+                <div class="skills-content-box">
+                    <h4 class="h4 skills-item-title">QGIS</h4>
+                </div>
+
+
+              <li class="skills-item">
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/arcgispro.png" alt="arcgispro icon" width="40">
+                </div>
+
+                <div class = "skills-content-box">
+                    <h4 class = "h4 skills-item-title">ArcGIS Pro</h4>
+                </div>
+              </li>
+
+
+              <li class="skills-item">
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/spss.png" alt="SPSS icon" width="60">
+                </div>
+
+                <div class = "skills-content-box">
+                    <h4 class = "h4 skills-item-title">SPSS</h4>
+                </div>
+              </li>
+
+            </ul>
+
+
+            <h3 class="h3 skills-title">Spoken Languages</h3>
+            <ul class="skills-list">
+              <li class="skills-item">
+
+                <div class="skills-icon-box">
+                  <img src="/images/icon-skills/ina.png" alt="ina icon" width="40">
+                </div>
+  
+                <div class="skills-content-box">
+                  <h4 class="h4 skills-item-title">Indonesia</h4>
+                  <p class="skills-item-text">
+                    Native
+                  </p>
+                </div>
+              </li>
+              <li class="skills-item">
+
+              <div class="skills-icon-box">
+                <img src="/images/icon-skills/eng.png" alt="eng icon" width="40">
+              </div>
+
+              <div class="skills-content-box">
+                <h4 class="h4 skills-item-title">English</h4>
+                <p class="skills-item-text">
+                  IELTS 7.0
+                </p>
+              </div>
+            </li>
+            
+            <li class="skills-item">
+                
+                <div class="skills-icon-box">
+                <img src="/images/icon-skills/jp.png" alt="jpn icon" width="40">
+              </div>
+              
+              <div class="skills-content-box">
+                <h4 class="h4 skills-item-title">Japanese</h4>
+                <p class="skills-item-text">
+                  JLPT N4
+                </p>
+              </div>
+            </li>
+
+            </ul>
+  
+          </section>
+        </header>
+
+      </article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="competition" data-project-item>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S2352938523001490?via%3Dihub">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="/images/portofolio/timsurili-pimnas.jpg" alt="pimnas" width="1800" height="1200" data-project-img>
+                </figure>
+              </a>
+
+                <h3 class="project-title" data-project-title>Habitat Suitability Index of Surili</h3>
+
+                <p class="project-category">Research, Competition, College</p>
+
+                <div class = "project-text" data-project-text>
+
+                </div>
+
+              
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="competition" data-project-item>
+              <a href="https://www.itb.ac.id/berita/tim-mahasiswa-itb-raih-medali-emas-asean-geospatial-challenge-2023/59326">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/images/portofolio/agc2023.jpg" alt="agc" width="1800" height="1200" data-project-img>
+                </figure>
+              </a>
+
+                <h3 class="project-title" data-project-title>Cropland Suitability and Irrigation Priority Development</h3>
+
+                <p class="project-category">Research, Competition, College</p>
+
+                <div class = "project-text" data-project-text>
+                </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+       
+      </article>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Institut Teknologi Bandung</h4>
+
+              <span>2019-2023</span>
+
+              <p class="timeline-text">
+                Geodesy and Geomatics Engineering (BSc)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">GIS Consultant</h4> 
+                <h5 class="h5 timeline-item-subtitle"><i>Badan Pengembangan Infrastruktur Wilayah Kementerian PUPR</i></h5>
+                <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                - Developed a geospatial-based decision support system to prioritize infrastructure projects
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Awards</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Undergraduate Grand Prize Winner of iGEM</h4> 
+                  <h5 class="h5 timeline-item-subtitle"><i>iGEM Indonesian League</i></h5>
+                  <span>December 2023, Indonesia</span>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">A BUMN Scholarship Recipient of ITB Outstanding Student</h4> 
+                  <h5 class="h5 timeline-item-subtitle"><i>Badan Usaha Milik Negara</i></h5>
+                  <span>September 2023, Indonesia</span>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Distinction Award of ASEAN Geospatial Challenge</h4> 
+                  <h5 class="h5 timeline-item-subtitle"><i>Singapore Land Authority</i></h5>
+                  <span>March 2023, Singapore</span>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Second Place Datathon Georestart Jawa Barat</h4> 
+                  <h5 class="h5 timeline-item-subtitle"><i>Dinas Komunikasi dan Informatika Jawa Barat</i></h5>
+                  <span>October 2022, Indonesia</span>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">First Place Figure Skate Competition</h4> 
+                  <h5 class="h5 timeline-item-subtitle"><i>Ice Skating Institute Asia</i></h5>
+                  <span>August 2022, Malaysia</span>
+  
+              </li>
+  
+            </ol>
+  
+          </section>
+
+      </article>
+
+
+
+
+
+
     </main>
     
     <footer>
