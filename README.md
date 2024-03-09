@@ -2,11 +2,6 @@
 
 Welcome to my personal corner on the internet where I share my profile, projects, thoughts, and experiences in related to geospatial technology.
 
-## Links
-
-- Website: [mailfaruqi.com](mailfaruqi.com)
-- Figma: [figma.com/mailfaruqi](https://www.figma.com/file/Few50JS0Ll4uwjNBjvHP6w/Personal-Web?type=design&node-id=0%3A1&mode=design&t=Tm91akWrf6o4k3Sb-1)
-
 ## Projects
 
 Here are some of the projects I've worked on:
@@ -38,7 +33,4 @@ I occasionally write about my work, new technologies, and personal experiences i
 - GitHub: [github.com/mailfaruqee](https://github.com/mailfaruqee)
 
 ## Preview
-
-### Home
-![Home](./images/preview_personalweb.jpg)
 
